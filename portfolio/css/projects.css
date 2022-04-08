@@ -1,33 +1,60 @@
 .projects{
-	margin: 0;
-	padding: 0;
-	background-color: #122;
+    padding: 0;
+    margin: 0;
+    background-color: #001010;
+}
+
+.projects h1{
+    text-align: center;
+    padding: 20px;
+}
+
+.projects h3{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    width: 90%;
+}
+
+.projects hr{
+    margin-left: 40%;
+    width: 20%;
+    background-color: white;
+    height: 2px;
+    margin-bottom: 15px;
 }
 
 .projects .item{
-	margin: 2rem 0;
-	height: 320px;
-	width: 100%;
-	position: relative;
+    margin: 0;
+    /* padding: 2rem; */
+    height: 320px;
+    width: 100%;
+    position: relative;
+}
+
+.projects .row{
+    width: 90%;
+    margin-left: 5%;
 }
 
 .projects .row .item:nth-child(1){
-	background: url('../asset/img.jpg') center/cover no-repeat;
+    background: url("../asset/img.jpg") center/cover no-repeat;
 }
 .projects .row .item:nth-child(2){
-	background: url('../asset/img.jpg') center/cover no-repeat;
+    background: url("../asset/img.jpg") center/cover no-repeat;
 }
 .projects .row .item:nth-child(3){
-	background: url('../asset/img.jpg') center/cover no-repeat;
+    background: url("../asset/img.jpg") center/cover no-repeat;
 }
 .projects .row .item:nth-child(4){
-	background: url('../asset/img.jpg') center/cover no-repeat;
+    background: url("../asset/img.jpg") center/cover no-repeat;
 }
 .projects .row .item:nth-child(5){
-	background: url('../asset/img.jpg') center/cover no-repeat;
+    background: url("../asset/img.jpg") center/cover no-repeat;
 }
 .projects .row .item:nth-child(6){
-	background: url('../asset/img.jpg') center/cover no-repeat;
+    background: url("../asset/img.jpg") center/cover no-repeat;
 }
 
 .projects .item .item-overlay{
@@ -35,35 +62,34 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: #144;
+    height: 320px;
+    background-color: #005050;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1.5rem;
     opacity: 0;
-    transition: var(--transition);
+    transition: all 0.4s ease;
 }
 
 .projects .item .item-overlay a{
     text-transform: capitalize;
-    font-size: 1.25rem;
+    font-size: 27px;
     font-weight: 400;
-    font-family: var(--poppins);
+    font-family: 'Poppins', sans-serif;
 }
+
 .projects .item .item-overlay h3{
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 25px;
     letter-spacing: 3px;
 }
 .projects .item:hover .item-overlay{
     opacity: 0.9;
 }
 
-
 @media screen and (min-width: 768px){
-	.projects .row{
+    .projects .row{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 2rem;
@@ -79,5 +105,5 @@
     }
     .projects .row .item:nth-child(6){
         grid-column: 2/4;
-    }	
+    }   
 }
